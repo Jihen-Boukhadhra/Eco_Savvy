@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecosavy.Controllers.ControllerUser">
+    <children>
+        <TableView fx:id="tableReceiver" editable="true" layoutX="29.0" layoutY="27.0" prefHeight="367.0" prefWidth="891.0" style="-fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #151573;">
+            <columns>
+                <TableColumn fx:id="NomCol" prefWidth="75.0" text="Nom_Prenom" />
+                <TableColumn fx:id="emailCOl" prefWidth="75.0" text="Email" />
+                <TableColumn fx:id="SecteurCol" prefWidth="75.0" text="Secteur" />
+                <TableColumn fx:id="NomEntrepriseCol" prefWidth="75.0" text="Nom_entreprise" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

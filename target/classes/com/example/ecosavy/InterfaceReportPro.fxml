@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecosavy.Controllers.ControllerReportPro">
+    <children>
+        <TableView fx:id="tableComm" editable="true" layoutY="2.0" prefHeight="410.0" prefWidth="950.0" style="-fx-border-radius: 5; -fx-background-radius: 5; -fx-border-color: #151573;">
+            <columns>
+                <TableColumn fx:id="idCol" prefWidth="75.0" text="ID_Rapport" />
+                <TableColumn fx:id="libelleCol" prefWidth="75.0" text="Titre" />
+                <TableColumn fx:id="auteurCol" prefWidth="75.0" text="Auteur" />
+                <TableColumn fx:id="contenuCol" prefWidth="75.0" text="Contenu" />
+            </columns>
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+            </columnResizePolicy>
+        </TableView>
+    </children>
+</AnchorPane>

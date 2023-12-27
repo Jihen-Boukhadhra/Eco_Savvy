@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="537.0" prefWidth="675.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecosavy.Controllers.ControllerAddVerre">
+    <children>
+        <Button fx:id="ButtonAddTrashFin" layoutX="531.0" layoutY="474.0" mnemonicParsing="false" onAction="#handleButtonAddTrashFinAction" prefHeight="35.0" prefWidth="120.0" style="-fx-background-color: radial-gradient(center 60% 40%, radius 75%, blue, purple)" text="ADD" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="14.0" />
+            </font></Button>
+        <Text fill="#404040" layoutX="227.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREATE NEW TRASH" textAlignment="CENTER">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="21.0" />
+            </font>
+        </Text>
+        <Text fill="#8c8c8c" layoutX="325.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Verre">
+            <font>
+                <Font name="Barlow Condensed Regular" size="14.0" />
+            </font>
+        </Text>
+      <GridPane layoutX="-4.0" layoutY="72.0" prefHeight="377.0" prefWidth="682.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+              <VBox prefHeight="370.0" prefWidth="298.0" spacing="20.0">
+                  <children>
+                      <TextField fx:id="wasteIdField" prefHeight="35.0" prefWidth="294.0" promptText="wasteId" style="-fx-background-radius: 8; -fx-background-color: trasnsparent; -fx-border-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple);" />
+                      <TextField fx:id="quantityStockField" prefHeight="35.0" prefWidth="245.0" promptText="quantityStock" style="-fx-background-radius: 8; -fx-background-color: transparent; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-border-radius: 8;" />
+                      <TextField fx:id="weightField" prefHeight="35.0" prefWidth="245.0" promptText="weight" style="-fx-background-radius: 8; -fx-background-color: transparent; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-border-radius: 8;" />
+                  <TextField fx:id="lifeSpanField" prefHeight="35.0" prefWidth="294.0" promptText="lifespan" style="-fx-background-radius: 8; -fx-background-color: trasnsparent; -fx-border-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple);" />
+                  <ComboBox fx:id="isBiodegradableField" prefHeight="34.0" prefWidth="281.0" promptText="isBiodegradable" style="-fx-background-color: transparent; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple);">
+                     <items>
+                        <FXCollections fx:factory="observableArrayList">
+                           <String fx:value="TRUE" />
+                           <String fx:value="FLASE" />
+                        </FXCollections>
+                     </items>
+                  </ComboBox>
+                      <ComboBox fx:id="isRecyclableField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="34.0" prefWidth="282.0" promptText="isRecyclable" style="-fx-background-color: transparent; -fx-background-radius: 8; -fx-border-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple);">
+                          <items>
+                              <FXCollections fx:factory="observableArrayList">
+                                  <String fx:value="TRUE" />
+                                  <String fx:value="FALSE" />
+      
+                              </FXCollections>
+                          </items>
+                      </ComboBox>
+                  </children>
+                  <opaqueInsets>
+                      <Insets bottom="40.0" left="40.0" right="40.0" top="40.0" />
+                  </opaqueInsets>
+                  <padding>
+                      <Insets bottom="10.0" left="30.0" right="30.0" top="20.0" />
+                  </padding>
+              </VBox>
+            <VBox prefHeight="200.0" prefWidth="100.0" spacing="20.0" GridPane.columnIndex="1">
+               <children>
+                  <TextField fx:id="ColorField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="257.0" promptText="color" style="-fx-background-radius: 8; -fx-background-color: trasnsparent; -fx-border-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple);" />
+                  <TextField fx:id="TransparencyField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="257.0" promptText="Transparency_Level;// 0-100 " style="-fx-background-radius: 8; -fx-background-color: transparent; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-border-radius: 8;" />
+                  <DatePicker fx:id="Production_Date" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="35.0" prefWidth="258.0" promptText="Production_Date" style="-fx-background-color: transparent; -fx-background-radius: 8; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-border-radius: 8;" />
+                  <HBox prefWidth="306.0" spacing="5.0">
+                     <children>
+                        <TextField fx:id="chemicalMaterialTextField" prefHeight="26.0" prefWidth="298.0" promptText="Chemical Material" style="-fx-background-color: transparent; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-background-radius: 8; -fx-border-radius: 8;" />
+                        <TextField fx:id="volumeTextField" prefHeight="26.0" prefWidth="147.0" promptText="Volume" style="-fx-background-color: transparent; -fx-border-color: radial-gradient(center 60% 40%, radius 75%, blue, purple); -fx-background-radius: 8; -fx-border-radius: 8;" />
+                        <JFXButton fx:id="ButtonAddChemicalMat" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#handleButtonAddChemicalMatAction" prefHeight="26.0" prefWidth="30.0" text="Button">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PLUS" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </HBox>
+                  <ListView fx:id="chemicalCompositionListView" prefHeight="100.0" prefWidth="270.0" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="20.0" right="30.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </GridPane>
+    </children>
+</AnchorPane>

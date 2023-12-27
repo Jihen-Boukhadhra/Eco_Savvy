@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" nodeOrientation="LEFT_TO_RIGHT" prefHeight="623.0" prefWidth="1271.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecosavy.Controllers.ControllerProvider">
+    <children>
+
+        <Pane layoutX="-2.0" prefHeight="145.0" prefWidth="1062.0" styleClass="head-background" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label layoutX="224.0" layoutY="47.0" text="ECO SAVY" textFill="WHITE">
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="227.0" layoutY="100.0" text="Tunisia" textFill="WHITE">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                </Label>
+                <JFXButton fx:id="ButtonProfile" layoutX="1041.0" layoutY="95.0" nodeOrientation="RIGHT_TO_LEFT" onAction="#handleButtonProfileAction" prefHeight="30.0" prefWidth="163.0" ripplerFill="WHITE" style="-fx-background-color: #473E98;" text="PROFILE" textFill="WHITE">
+                    <font>
+                        <Font name="System Bold" size="12.0" />
+                    </font>
+                </JFXButton>
+                <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="1080.0" layoutY="117.0" size="18" />
+            </children>
+        </Pane>
+        <VBox layoutX="-1.0" layoutY="220.0" prefHeight="403.0" prefWidth="252.0" spacing="5.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="220.0">
+            <children>
+                <JFXButton fx:id="ButtonDashboard" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#handleDashboardButton" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Dashboard" textFill="#5b5858">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <graphic>
+                        <FontAwesomeIconView fill="#151573" glyphName="DASHBOARD" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton fx:id="ButtonTrash" alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#handleTrashButton" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Trash" textFill="#5b5858">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <graphic>
+                        <FontAwesomeIconView fill="#151573" glyphName="TRASH" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#handleCommentsButton" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Comments" textFill="#5b5858">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <graphic>
+                        <FontAwesomeIconView fill="#151573" glyphName="COMMENTS" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#handleClientsButton" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Receiver" textFill="#5b5858">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <graphic>
+                        <FontAwesomeIconView fill="#151573" glyphName="USERS" />
+                    </graphic>
+                </JFXButton>
+                <JFXButton alignment="BASELINE_LEFT" graphicTextGap="10.0" onAction="#handleRapportButton" prefHeight="43.0" prefWidth="252.0" ripplerFill="#bfadf8" text="Rapports" textFill="#5b5858">
+                    <font>
+                        <Font size="13.0" />
+                    </font>
+                    <padding>
+                        <Insets left="50.0" />
+                    </padding>
+                    <graphic>
+                        <FontAwesomeIconView fill="#151573" glyphName="BOOK" />
+                    </graphic>
+                </JFXButton>
+            </children>
+        </VBox>
+        <Pane layoutX="71.0" layoutY="44.0" prefHeight="131.0" prefWidth="142.0" style="-fx-background-color: #fff;">
+            <effect>
+                <DropShadow blurType="GAUSSIAN" height="10.0" radius="4.5" width="10.0" />
+            </effect>
+            <children>
+                <FontAwesomeIconView fill="#151573" glyphName="RECYCLE" layoutX="34.0" layoutY="92.0" size="75" />
+            </children>
+        </Pane>
+        <BorderPane fx:id="borderPane" layoutX="276.0" layoutY="176.0" prefHeight="410.0" prefWidth="950.0" style="-fx-border-width: 2; -fx-border-color: #000;" />    </children>
+</AnchorPane>
