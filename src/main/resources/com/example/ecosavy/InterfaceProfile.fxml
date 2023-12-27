@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="410.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ecosavy.Controllers.ControllerProfile">
+    <children>
+        <ImageView fitHeight="418.0" fitWidth="950.0" layoutY="-2.0">
+            <image>
+                <Image url="@src/main/resources/images/Backgrround.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="124.0" fitWidth="145.0" layoutX="-8.0" layoutY="4.0">
+            <image>
+                <Image url="@src/main/resources/images/userProfile.png" />
+            </image>
+        </ImageView>
+        <Text fill="WHITE" layoutX="21.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TASNIM" wrappingWidth="91.33333333333331">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="21.0" />
+            </font>
+        </Text>
+        <FontAwesomeIconView fill="WHITE" glyphName="RECYCLE" layoutX="877.0" layoutY="48.0" size="40" wrappingWidth="48.26668701171866" />
+        <ToolBar layoutX="172.0" layoutY="93.0" prefHeight="284.0" prefWidth="699.0">
+            <items>
+                <TitledPane contentDisplay="TOP" layoutX="10.0" layoutY="133.0" prefHeight="264.0" prefWidth="117.0" text="Statut" textFill="#4318d0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="245.0" prefWidth="66.0">
+                            <children>
+                                <TextArea layoutX="4.0" layoutY="6.0" prefHeight="226.0" prefWidth="108.0" text="Je suis une&#10;membre&#10;active de la &#10;famille de&#10;Eco Savvy.&#10;&#10;Je suis convaicue &#10;de ses valeurs &#10;et de son but &#10;noble envers&#10;l'humanité.">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="10.0" />
+                                    </font>
+                                </TextArea>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </TitledPane>
+                <TitledPane contentDisplay="TOP" prefHeight="266.0" prefWidth="224.0" text="Date d'Accès " textFill="#4318d0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="165.0" prefWidth="388.0">
+                            <children>
+                                <TextArea layoutX="5.0" layoutY="6.0" prefHeight="228.0" prefWidth="211.0" text="Jour: 11&#10;&#10;Mois: Décembre&#10;&#10;Année: 2023">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="10.0" />
+                                    </font>
+                                </TextArea>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </TitledPane>
+                <TitledPane contentDisplay="TOP" layoutX="163.0" layoutY="14.0" prefHeight="266.0" prefWidth="333.0" text="Activité" textFill="#4318d0">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="240.0" prefWidth="123.0">
+                            <children>
+                                <TextArea layoutX="7.0" layoutY="6.0" prefHeight="228.0" prefWidth="318.0" text="01/02/2023&#10;Plastique: 50Kg&#10;&#10;10/06/2023&#10;Electronique: 7Kg&#10;&#10;28/11/2023&#10;Tissu: 80Kg&#10;">
+                                    <font>
+                                        <Font name="Arial Rounded MT Bold" size="10.0" />
+                                    </font>
+                                </TextArea>
+                            </children>
+                        </AnchorPane>
+                    </content>
+                    <font>
+                        <Font name="Arial Rounded MT Bold" size="12.0" />
+                    </font>
+                </TitledPane>
+            </items>
+        </ToolBar>
+        <Button fx:id="SignOut" layoutX="793.0" layoutY="22.0" mnemonicParsing="false" onAction="#SignOut" style="-fx-background-color: radial-gradient(center 60% 40%, radius 75%, blue, purple)" text="Sign Out" textFill="WHITE">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="12.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
